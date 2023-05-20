@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  .header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  /* Estilos del héroe */
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos de las secciones */
+  .section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .section-features {
+    padding: 80px 0;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    color: #777;
+  }
+  
+  .section-pricing {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .pricing-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .pricing-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-features li {
+    margin-bottom: 10px;
+  }
+  
+  .section-contact {
+    padding: 80px 0;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Estilos del formulario de contacto */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 767px) {
+    .header {
+      text-align: center;
+    }
+  
+    .nav-links {
+      margin-top: 20px;
+    }
+  
+    .hero-title {
+      font-size: 28px;
+    }
+  
+    .hero-subtitle {
+      font-size: 16px;
+    }
+  
+    .section-title {
+      font-size: 24px;
+    }
+  
+    .feature-image {
+      max-width: 200px;
+    }
+  }
+  
