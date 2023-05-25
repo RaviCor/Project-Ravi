@@ -1,0 +1,30 @@
+Aca cree un login basico, tiene una BD en sqlalchemy, cree solo un uss = "admin" y su psw = "admin123".
+Funciona bien digamos, esteticamente medio choto pero bueno podria servir como pagina de login, haciendo un link desde la landing page, que nos redirigiría
+al login.html
+
+
+En los requeriments voy a agregar lo que se necesita para hacer funcionar esto, que seria instalar sqlalchemy y poco mas creo.
+
+
+Para hacerlo funcionar hay que estar en un entorno virtual (env) , ejecutar un "db.create_all()" antes de correr el app.py.
+para correr el app.py, tenes que estar con el env activado, y posicionarte en la carpeta main digamos, donde esta el app.py , aca en mi branch
+seria en "Project-Ravi", y si no creas la carpeta templates y ahi pones el login.html no funca, y el archivo database.db tiene que estar en el mismo
+nivel del app.py.
+Creo que no me falta aclarar nada, ahora te subo esto lo miras y me decis, voy a ir generando el html de "workstation" que seria la pagina a mostrar despues
+de loguearse correctamente. Al menos ver si la puedo hacer esteticamente , despues vemos de hacerla funcional.
+
+
+
+Estos serian los requeriments, igual los agrego en el txt donde estan.
+
+blinker==1.6.2
+click==8.1.3
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.3
+greenlet==2.0.2
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.2
+SQLAlchemy==2.0.15
+typing_extensions==4.6.1
+Werkzeug==2.3.4
