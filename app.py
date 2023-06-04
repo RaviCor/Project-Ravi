@@ -41,15 +41,20 @@ def login():
         user = User.query.filter_by(username=username).first()
 
         if user and check_password_hash(user.password, password):
-            return redirect(url_for('welcome'))
+            return redirect(url_for('tasks'))
         else:
             return render_template('login.html', error=True)
 
     return render_template('login.html', error=False)
 
-@app.route('/welcome')
+
+@app.route('/')
 def welcome():
-    return '¡Bienvenido!'
+    return render_template('index.html')
+
+@app.route('/tasks')
+def tasks():
+    return render_template('tasks.html')
 
 @app.route('/forgot-password')
 def forgot_password():
