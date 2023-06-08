@@ -1,0 +1,30 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Sheet System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <!-- Encabezado de tu sitio web -->
+    <nav>
+      <!-- Barra de navegación -->
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="{{ url_for('auth.login') }}">Iniciar sesión</a></li>
+        <li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; Ravi se la come</p>
+  </footer>
+</body>
+</html>
